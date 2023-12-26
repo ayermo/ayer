@@ -197,7 +197,7 @@ public class knndriver {
         conf.setInt("K",20);
         Job job1 = Job.getInstance(conf, "word count");
 		job1.setJarByClass(knndriver.class);
-		job1.addCacheFile(new URI("/task3/test_data4.csv"));
+		job1.addCacheFile(new URI("/task3/test_data5.csv"));
 		job1.setMapperClass(knnmapper.class);
 		job1.setCombinerClass(knncombiner.class);
 		job1.setReducerClass(knnreducer.class);
